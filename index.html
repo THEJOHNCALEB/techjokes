@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css
+" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script defer src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js
+"></script>
+<!-- github fork ribbon from https://github.com/simonwhitaker/github-fork-ribbon-css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="stylesheet" href="./style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+<script src="./script.js" defer></script>
+  <title>Random Tech Joke Machine - By John Caleb</title>
+</head>
+<body id="body">
+  <a class="github-fork-ribbon left-top" href="https://github.com/thejohncaleb" target="_blank" data-ribbon="⭐Star on GitHub" title="⭐Star on GitHub">⭐Star on GitHub</a>
+  <div id="root">
+    <div id="quote-box">
+      <button id="new-quote">Generate New Tech Joke</button>
+      <div class="jokeContainer">
+        <i class="fa fa-2x fa-quote-left"></i>
+        <h1 id="text"></h1>
+        <i class="fa fa-2x fa-quote-right"></i>
+      </div>
+      <div id="bottom-border"></div>
+      <div id="shareIt">
+      <a target="_top" id="tweet-quote"><i class="fa fa-2x fa-twitter"></i></a>
+       <a onClick='copyToBoard()' id="copytoclipboard"><i class="fa fa-2x fa-clipboard"></i></a> 
+        </div>
+    </div>
+  </div>
+</body>
+</html>

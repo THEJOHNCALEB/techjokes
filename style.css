@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Montserrat&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+body {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%, 
+rgba(255, 255, 255, 0.5)50%), url('https://source.unsplash.com/random');
+background-size: cover;
+  background-position: 60% center;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 400px) {
+  body {
+    overflow: auto;
+  }
+  
+}
+#root{
+  display: flex;
+  place-content: center;
+  text-align: center;
+  margin: 80px auto;
+}
+.github-fork-ribbon:before{ 
+  background-color: #333; 
+}
+#quote-box{
+  width: 32rem;
+  padding: 2.5rem;
+  backdrop-filter: blur(1);
+  background-color: #fff;
+}
+#tweet-quote{
+  word-break: break-all;
+}
+
+#text{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #f32170,
+  #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+    
+.jokeContainer{
+    padding: 18px;
+}
+
+i{
+  color: #ff6b08
+}
+#bottom-border{
+  width: 20px;
+   background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+}
+
+#new-quote{
+    background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+  border: 1px dashed #ff6b08;
+  margin: 10px;
+  font-size: x-large;
+  padding: 12px;
+  outline: none;
+  border-radius: 15px;
+}
+
+#shareIt{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dashed #ff6b08;
+  padding: 18px;
+}
+#copytoclipboard{
+  cursor: pointer;
+}
