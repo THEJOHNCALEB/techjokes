@@ -27,9 +27,9 @@ function randomQuote(newQuoteResponse) {
   if(setup == undefined){
     getQuotes()
   }else{
-	  var whatToTweet = document.getElementById("text");
-    var TweetQuoteAttr = `${whatToTweet} "\n I used the random tech jokes generator by @thejohncaleb to generate this tech joke 👻 \n Catch all the fun here 😜: techjokes.netlify.app"`;
-    $("#text").html(setup + "🤔  " + delivery + "🤭");
+	 $("#text").html(setup + "🤔  " + delivery + "🤭");
+	    var whatToTweet = document.getElementById("text");
+    var TweetQuoteAttr = `${whatToTweet} "\n I used the random tech jokes generator by @thejohncaleb to generate this tech joke 👻.... \n Catch all the fun here 😜: techjokes.netlify.app"`;
     $("#tweet-quote").attr("href", Tweet(TweetQuoteAttr));
   }
 }
