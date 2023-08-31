@@ -28,8 +28,8 @@ function randomQuote(newQuoteResponse) {
     getQuotes()
   }else{
 	 $("#text").html(setup + "🤔  " + delivery + "🤭");
-	    var whatToTweet = document.getElementById("text");
-    var TweetQuoteAttr = `${whatToTweet} "\n I used the random tech jokes generator by @thejohncaleb to generate this tech joke 👻.... \n Catch all the fun here 😜: techjokes.netlify.app"`;
+	    var whatToTweet = document.getElementById("text").innerText;
+    var TweetQuoteAttr = `${whatToTweet} "\n  NB: I used the random tech jokes generator by @thejohncaleb to generate this tech joke 👻.... \n Catch all the fun here 😜: techjokes.netlify.app"`;
     $("#tweet-quote").attr("href", Tweet(TweetQuoteAttr));
   }
 }
@@ -39,7 +39,7 @@ function copyToBoard(){
         Swal.fire({
   position: 'top-end',
   icon: 'success',
-  title: 'Quote Copied Successfully 🎉',
+  title: 'Joke Copied Successfully 👻🎉',
   showConfirmButton: false,
   timer: 1500
 })
