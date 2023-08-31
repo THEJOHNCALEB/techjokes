@@ -27,9 +27,10 @@ function randomQuote(newQuoteResponse) {
   if(setup == undefined){
     getQuotes()
   }else{
-    var TweetQuoteAttr = '"I used the quote generator by @thejohncaleb to generate this quote ✨"' + setup + '';
+	  var whatToTweet = document.getElementById("text");
+    var TweetQuoteAttr = `${whatToTweet} "\n I used the random tech jokes generator by @thejohncaleb to generate this tech joke 👻 \n Catch all the fun here 😜: techjokes.netlify.app"`;
     $("#text").html(setup + "🤔  " + delivery + "🤭");
-    $("#tweet-quote").attr("href", Tweet('"' + TweetQuoteAttr + '" - ' + delivery));
+    $("#tweet-quote").attr("href", Tweet(TweetQuoteAttr));
   }
 }
 function copyToBoard(){
